@@ -41,7 +41,7 @@ export class PasodosComponent {
    crearFormulario() {
     this.segundo = this.formBuilder.group({
       nombre: ['', [Validators.required, Validators.minLength(5)]],
-      tipoDocumento: [null, Validators.required],
+      tipoDocumento: ['', Validators.required],
       numeroDocumento: ['', [Validators.required, Validators.minLength(5)]],
       celular: ['', [Validators.required, Validators.pattern(this.const.patternCel), Validators.maxLength(10), Validators.minLength(10)]],
       correoPersonal: ['', [Validators.required, Validators.pattern(this.const.patternMail), Validators.minLength(10)]],
@@ -75,7 +75,7 @@ export class PasodosComponent {
   get documentoExtranjeria() {
     return this.segundo.controls['tipoDocumento'].value == 1 && this.segundo.controls['numeroDocumento'].value.length == 6 && this.segundo.get('numeroDocumento').touched;
   }
-  
+
   get celularNoValido() {
     return this.segundo.get('celular').invalid && this.segundo.get('celular').touched;
   }
