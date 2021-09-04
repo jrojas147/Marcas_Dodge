@@ -2,7 +2,7 @@
 @import '../scss/mixins';
 
 .contenedor{
-    grid-row: 1;
+    grid-row: 10;
     grid-column: 1;
     background-image: url(../assets/img/fondo.png);
     background-repeat: no-repeat;
@@ -21,10 +21,13 @@
     .splash{
         grid-row: 1;
         grid-column: 1;
-        background-color: $colorPrimario;
-        height: 100vh;
+        background-color: black;
+        height: 50vh;
         z-index: 2;
-        display: grid;
+        display: block;
+        .logoSantanderBlanco{
+          width: 130px;
+        }
         img{
             align-self: center;
             justify-self: center

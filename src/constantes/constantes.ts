@@ -13,7 +13,7 @@ export const Constantes = {
     ],
     minimo: 10000000,
     precioMinimo: 13000000,
-    valorMinIngreso: 1200000,
+    valorMinIngreso: 10000,
     tasa: 0.0115,
     constanteSeguro: 1220 / 1000000,
      /* Regex */
@@ -67,7 +67,9 @@ export const Constantes = {
     negado: './assets/img/negado.png',
     fondo: './assets/img/fondo.png',
     cliente: './assets/img/dodge.png',
-    santander: './assets/img/consumerFinance.png',
-    santanderGris: './assets/img/consumerFinanceGris.png',
-    santanderBlanco: './assets/img/consumerFinanceBlanco.png'
+    santanderLogoRojo: './assets/img/consumerFinancingRojo.png',
+    santanderLogoNegro: './assets/img/consumerFinanceNegro.png',
+    santanderLogoBlanco: './assets/img/consumerFinanceBlanco.png',
+    santanderLogoGris: './assets/img/consumerFinancingGris.png',
 }
+
