@@ -22,9 +22,9 @@
         grid-row: 1;
         grid-column: 1;
         background-color: black;
-        height: 50vh;
+        height: 100vh;
         z-index: 2;
-        display: block;
+        display: grid;
         .logoSantanderBlanco{
           width: 130px;
         }
